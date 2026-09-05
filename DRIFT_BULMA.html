@@ -4,30 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cultura Drift JDM</title>
+  <!-- CDN de Bulma CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
   <style>
     html {
       scroll-behavior: smooth;
     }
     .hero-gradient {
-      background: linear-gradient(135deg, #1e293b 0%, #b91c1c 50%, #f59e0b 100%);
+      background: linear-gradient(135deg, #111827 0%, #b91c1c 55%, #f59e0b 100%);
     }
     .custom-stat-box {
-      border-left: 4px solid #b91c1c;
+      border-left: 5px solid #b91c1c;
     }
-    .card-placeholder {
-      background-color: #f1f5f9;
+    .car-card-img {
       height: 220px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #94a3b8;
-      font-weight: bold;
+      object-fit: cover;
+      width: 100%;
+    }
+    .profile-banner {
+      border-top: 4px solid #f59e0b;
     }
   </style>
 </head>
 <body>
 
+  <!-- Barra de Navegación (Navbar) -->
   <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
     <div class="container">
       <div class="navbar-brand">
@@ -39,49 +40,51 @@
         <div class="navbar-start">
           <a class="navbar-item" href="#inicio">Inicio</a>
           <a class="navbar-item" href="#que-es">¿Qué es el Drift?</a>
-          <a class="navbar-item" href="#eras">Épocas clave</a>
+          <a class="navbar-item" href="#creador">Comunidad & Kenyi</a>
           <a class="navbar-item" href="#tecnicas">Técnicas</a>
-          <a class="navbar-item" href="#autos">Autos legendarios</a>
+          <a class="navbar-item" href="#garage">Garage de Leyendas</a>
           <a class="navbar-item" href="#curiosidades">Curiosidades</a>
         </div>
       </div>
     </div>
   </nav>
 
+  <!-- Hero de Introducción -->
   <section id="inicio" class="hero is-medium hero-gradient mt-5">
     <div class="hero-body has-text-centered">
       <div class="container">
         <h1 class="title is-1 has-text-white">
-          El Arte del Drift Japonés
+          El Arte del Drift y la Cultura Callejera
         </h1>
         <p class="subtitle is-4 has-text-light">
-          Técnica, estilo y la era dorada que transformó las curvas de montaña en un fenómeno global
+          Desde las curvas del touge y el asfalto nocturno hasta los creadores que mantienen viva la pasión
         </p>
-        <a href="#que-es" class="button is-warning is-medium has-text-weight-semibold">
-          Descubre más
+        <a href="#garage" class="button is-warning is-medium has-text-weight-semibold">
+          Explorar el Garage
         </a>
       </div>
     </div>
   </section>
 
+  <!-- Sección 1: ¿Qué es el Drift? (Columnas + Box de estadística) -->
   <section id="que-es" class="section">
     <div class="container">
-      <h2 class="title is-2 has-text-centered mb-6">¿Qué es el Drift?</h2>
+      <h2 class="title is-2 has-text-centered mb-6">¿Qué es el Drifting?</h2>
       <div class="columns is-vcentered">
         <div class="column is-7">
           <p class="content is-size-5">
-            El <strong>drifting</strong> es una disciplina automovilística nacida en los pasos de montaña (<em>touge</em>) de Japón a finales de los años 70 y principios de los 80. Consiste en inducir de forma controlada el sobreviraje del vehículo, manteniendo un ángulo de derrape constante a alta velocidad.
+            El <strong>drifting</strong> es un estilo de conducción donde el piloto rompe intencionalmente la tracción de las ruedas traseras para deslizar el vehículo lateralmente en curvas, manteniendo velocidad constante y un ángulo de ataque pronunciado.
           </p>
           <p class="content is-size-5">
-            A diferencia de las carreras cronometradas convencionales, aquí el éxito no se mide únicamente por llegar primero a la meta, sino por la <strong>precisión de la trayectoria, la velocidad de entrada, el ángulo sostenido y el estilo</strong> detrás del volante.
+            Aunque nació en los sinuosos pasos de montaña de Japón, hoy en día es una disciplina de impacto mundial que abraza tanto a las plataformas de propulsión trasera (RWD) niponas como a íconos europeos y la cultura street.
           </p>
         </div>
         <div class="column is-5">
           <div class="box custom-stat-box has-text-centered p-6">
-            <p class="heading has-text-grey is-size-6">Dato Clave</p>
-            <p class="title is-1 has-text-danger mb-2">1988</p>
+            <p class="heading has-text-grey is-size-6">Ángulo y Control</p>
+            <p class="title is-1 has-text-danger mb-2">100%</p>
             <p class="subtitle is-6 has-text-grey-dark">
-              Año en que se popularizó el mítico video "Pluspy" en el Monte Tsukuba, catalizador definitivo de este deporte.
+              Enfoque en balance, sobreviraje sostenido y estilo por encima del cronómetro tradicional.
             </p>
           </div>
         </div>
@@ -89,42 +92,36 @@
     </div>
   </section>
 
-  <section id="eras" class="section has-background-light">
+  <!-- Sección 2: Creador destacado - Kenyi Nakamura (Box / Columns) -->
+  <section id="creador" class="section has-background-light">
     <div class="container">
-      <div class="has-text-centered mb-6">
-        <h2 class="title is-2">Épocas Clave</h2>
-        <p class="subtitle is-5 has-text-grey">Evolución desde las montañas clandestinas hasta la escena profesional</p>
-      </div>
-      <div class="columns">
-        <div class="column">
-          <div class="box h-100">
-            <h3 class="title is-4">Touge Clandestino</h3>
-            <p class="subtitle is-6 has-text-grey">Años 70 y 80</p>
-            <p>Pilotos perfeccionaban técnicas nocturnas en puertos de montaña como Hakone y Monte Haruna al borde de la física y la ley.</p>
+      <div class="box profile-banner p-6">
+        <div class="columns is-vcentered">
+          <div class="column is-8">
+            <span class="tag is-danger is-medium mb-3">Creador & Entusiasta</span>
+            <h2 class="title is-2 mb-2">Kenyi Nakamura</h2>
+            <p class="subtitle is-5 has-text-grey">Voz clave en la difusión del drifting, proyectos de garage y cultura tuerca</p>
+            <p class="content is-size-5">
+              A través de su contenido, <strong>Kenyi Nakamura</strong> documenta de primera mano la adrenalina del drift, el proceso real detrás del armado de proyectos, ajustes de chasises y la convivencia en pistas y meetups. Su trabajo acerca la técnica, los errores y la pasión del automovilismo a una comunidad cada vez más amplia.
+            </p>
           </div>
-        </div>
-        <div class="column">
-          <div class="box h-100">
-            <h3 class="title is-4">Nacimiento del D1GP</h3>
-            <p class="subtitle is-6 has-text-grey">Año 2000</p>
-            <p>Se funda la primera serie formal de competencia profesional de drifting en Japón, exportando jueces y reglas estandarizadas al mundo.</p>
-          </div>
-        </div>
-        <div class="column">
-          <div class="box h-100">
-            <h3 class="title is-4">Globalización JDM</h3>
-            <p class="subtitle is-6 has-text-grey">2006 en adelante</p>
-            <p>La cultura pop, el anime y el cine llevaron el estilo estético y sonoro de los motores japoneses turboalimentados a escala mundial.</p>
+          <div class="column is-4 has-text-centered">
+            <div class="notification is-dark p-5">
+              <p class="heading has-text-warning">Enfoque de Contenido</p>
+              <p class="title is-4 has-text-white mb-2">Drift & Proyectos</p>
+              <p class="is-size-7 has-text-grey-light">Armados mecánicos, cultura de pista, pruebas de manejo y pasión pura por los motores.</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Sección 3: Técnicas y Estilos (Tags) -->
   <section id="tecnicas" class="section">
     <div class="container has-text-centered">
       <h2 class="title is-2">Técnicas de Iniciación</h2>
-      <p class="subtitle is-5 has-text-grey mb-5">Maniobras fundamentales utilizadas para romper la tracción trasera</p>
+      <p class="subtitle is-5 has-text-grey mb-5">Maniobras fundamentales para inducir y controlar el derrape</p>
       <div class="tags are-medium is-centered">
         <span class="tag is-danger">Clutch Kick</span>
         <span class="tag is-info">Handbrake Turn</span>
@@ -138,98 +135,166 @@
     </div>
   </section>
 
-  <section id="autos" class="section has-background-white-ter">
+  <!-- Sección 4: Garage de Leyendas (Cards con tus autos) -->
+  <section id="garage" class="section has-background-white-ter">
     <div class="container">
       <div class="has-text-centered mb-6">
-        <h2 class="title is-2">Plataformas Legendarias</h2>
-        <p class="subtitle is-5 has-text-grey">La trinidad clásica de chasis de tracción trasera (FR)</p>
+        <h2 class="title is-2">Garage de Leyendas</h2>
+        <p class="subtitle is-5 has-text-grey">Plataformas que definen el automovilismo urbano y la escena del derrape</p>
       </div>
+
+      <!-- Fila 1: 3 Cards -->
+      <div class="columns mb-5">
+        <div class="column is-4">
+          <div class="card h-100">
+            <div class="card-image">
+              <figure class="image">
+                <img src="bmw serie 3 e46.jpg" alt="BMW Serie 3 E46" class="car-card-img">
+              </figure>
+            </div>
+            <div class="card-content">
+              <h3 class="title is-4 mb-2">BMW Serie 3 (E46)</h3>
+              <p class="subtitle is-6 has-text-danger mb-3">Chasis Alemán | Distribución 50/50</p>
+              <p class="content">
+                El balance perfecto entre chasis europeo y competición de derrape. Famoso en circuitos urbanos y en competencias como Formula Drift.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-4">
+          <div class="card h-100">
+            <div class="card-image">
+              <figure class="image">
+                <img src="honda civic hatchback.jpg" alt="Honda Civic Coupé / Hatchback" class="car-card-img">
+              </figure>
+            </div>
+            <div class="card-content">
+              <h3 class="title is-4 mb-2">Honda Civic (EJ/EG)</h3>
+              <p class="subtitle is-6 has-text-danger mb-3">Motor VTEC Serie B/D | Espíritu Kanjozoku</p>
+              <p class="content">
+                El estandarte de las autopistas elevadas de Osaka. Ligero, reactivo en curvas cerradas y con una comunidad tuning insuperable.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-4">
+          <div class="card h-100">
+            <div class="card-image">
+              <figure class="image">
+                <img src="mazda rx-7 fd3s.jpg" alt="Mazda RX-7 FD3S Veilside" class="car-card-img">
+              </figure>
+            </div>
+            <div class="card-content">
+              <h3 class="title is-4 mb-2">Mazda RX-7 (FD3S)</h3>
+              <p class="subtitle is-6 has-text-danger mb-3">Motor Rotativo 13B | Kit VeilSide Fortune</p>
+              <p class="content">
+                Inconfundible por su silueta ensanchada y el sonido único del motor Wankel; el símbolo eterno del drift nocturno de Tokio.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fila 2: 3 Cards -->
       <div class="columns">
         <div class="column is-4">
-          <div class="card">
+          <div class="card h-100">
             <div class="card-image">
-              <div class="card-placeholder">Toyota AE86 Trueno</div>
+              <figure class="image">
+                <img src="nissan 240s.jpg" alt="Nissan 240SX S13" class="car-card-img">
+              </figure>
             </div>
             <div class="card-content">
-              <h3 class="title is-4 mb-2">Toyota AE86</h3>
-              <p class="subtitle is-6 has-text-danger mb-3">Motor 4A-GE | 1.6L NA</p>
+              <h3 class="title is-4 mb-2">Nissan 240SX (S13)</h3>
+              <p class="subtitle is-6 has-text-danger mb-3">Faros Pop-up | Plataforma Silvia S</p>
               <p class="content">
-                Ligero, equilibrado y escuela de formación para los mejores corredores. Un ícono atemporal de pureza en el reparto de pesos.
+                La carrocería favorita de los pilotos principiantes y profesionales. Destaca por su estética noventera y enorme facilidad para el sobreviraje.
               </p>
             </div>
           </div>
         </div>
+
         <div class="column is-4">
-          <div class="card">
+          <div class="card h-100">
             <div class="card-image">
-              <div class="card-placeholder">Nissan Silvia S15</div>
+              <figure class="image">
+                <img src="nissan silvia s14.jpg" alt="Nissan Silvia S14 Kouki" class="car-card-img">
+              </figure>
             </div>
             <div class="card-content">
-              <h3 class="title is-4 mb-2">Nissan Silvia S15</h3>
-              <p class="subtitle is-6 has-text-danger mb-3">Motor SR20DET | 2.0L Turbo</p>
+              <h3 class="title is-4 mb-2">Nissan Silvia S14 (Kouki)</h3>
+              <p class="subtitle is-6 has-text-danger mb-3">Motor SR20DET | Frente Agresivo</p>
               <p class="content">
-                El chasis por excelencia para la competición profesional gracias a su distancia entre ejes y gran respuesta de suspensión.
+                Con una distancia entre ejes más amplia que su antecesor, el S14 ofrece transiciones de derrape suaves y una presencia imponente en pista.
               </p>
             </div>
           </div>
         </div>
+
         <div class="column is-4">
-          <div class="card">
+          <div class="card h-100">
             <div class="card-image">
-              <div class="card-placeholder">Mazda RX-7 FD3S</div>
+              <figure class="image">
+                <img src="toyota supra mk4.jpg" alt="Toyota Supra MK4" class="car-card-img">
+              </figure>
             </div>
             <div class="card-content">
-              <h3 class="title is-4 mb-2">Mazda RX-7 FD</h3>
-              <p class="subtitle is-6 has-text-danger mb-3">Motor 13B-REW | Twin-Turbo Rotativo</p>
+              <h3 class="title is-4 mb-2">Toyota Supra (A80 / MK4)</h3>
+              <p class="subtitle is-6 has-text-danger mb-3">Bloque de Hierro 2JZ-GTE | Biturbo</p>
               <p class="content">
-                Famoso por su centro de gravedad sumamente bajo, diseño aerodinámico fluido y el característico aullido del motor Wankel.
+                Un monstruo de potencia lineal. Su motor 2JZ es legendario por tolerar cifras masivas de caballaje sin perder fiabilidad estructural.
               </p>
             </div>
           </div>
         </div>
       </div>
+
     </div>
   </section>
 
+  <!-- Sección 5: Curiosidades (Notifications en columnas) -->
   <section id="curiosidades" class="section">
     <div class="container">
-      <h2 class="title is-2 has-text-centered mb-6">Curiosidades</h2>
+      <h2 class="title is-2 has-text-centered mb-6">Curiosidades del Asfalto</h2>
       <div class="columns">
         <div class="column">
           <div class="notification is-warning is-light has-text-centered">
             <p class="title is-2 mb-2">1</p>
-            <p><strong>Keiichi Tsuchiya</strong>, conocido como el "Drift King", aprendió a perfeccionar la técnica conduciendo en carreteras nevadas.</p>
+            <p><strong>Keiichi Tsuchiya</strong> pulió sus técnicas en pasos montañosos congelados antes de llevar el drift a las pistas oficiales.</p>
           </div>
         </div>
         <div class="column">
           <div class="notification is-info is-light has-text-centered">
             <p class="title is-2 mb-2">2</p>
-            <p>El manga <strong>Initial D</strong> disparó el valor de mercado del Toyota Sprinter Trueno a niveles de coleccionista en todo el mundo.</p>
+            <p>El chasis <strong>S13 y S14</strong> de Nissan es el más modificado en la historia moderna del drift internacional.</p>
           </div>
         </div>
         <div class="column">
           <div class="notification is-success is-light has-text-centered">
             <p class="title is-2 mb-2">3</p>
-            <p>En el drift no se busca el neumático más resbaladizo; los pilotos necesitan <strong>máximo agarre delantero</strong> para guiar el auto.</p>
+            <p>A mayor derrape, mayor necesidad de <strong>grip delantero</strong>; sin adherencia en el eje directriz, el auto trompea de inmediato.</p>
           </div>
         </div>
         <div class="column">
           <div class="notification is-danger is-light has-text-centered">
             <p class="title is-2 mb-2">4</p>
-            <p>El sistema de escape conocido como <strong>bosozoku</strong> influyó fuertemente en la estética sonora de las reuniones callejeras japonesas.</p>
+            <p>Creadores como <strong>Kenyi Nakamura</strong> han sido clave para que las nuevas generaciones entiendan la mecánica real y la pasión tuerca.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer class="footer has-background-dark has-text-white">
     <div class="content has-text-centered">
       <p>
-        <strong>JDM Drift Web</strong> — Página informativa creada con <strong>Bulma CSS</strong>.
+        <strong>JDM & Drift Hub</strong> — Proyecto web desarrollado con <strong>Bulma CSS</strong>.
       </p>
       <p class="is-size-7 has-text-grey-light">
-        Contenido con fines educativos y de difusión cultural automotriz. Todas las marcas registradas pertenecen a sus respectivos fabricantes.
+        Contenido enfocado en cultura automotriz y divulgación deportiva. Todas las marcas e imágenes pertenecen a sus respectivos creadores.
       </p>
     </div>
   </footer>
